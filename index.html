@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Countdown Timer</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header><h1>Countdown Timer</h1></header>
+
+    <main>
+      <div id="countdown">
+        <div class="time">
+          <div id="minutes">00</div>
+          <div class="label">Minutes</div>
+        </div>
+
+        <div class="time">
+          <div id="seconds">00</div>
+          <div class="label">Seconds</div>
+        </div>
+      </div>
+
+      <form id="form">
+        <label for="minutes">Set minutes:</label>
+        <input type="number" id="minutes-input" min="0" />
+
+        <label for="seconds">Set seconds:</label>
+        <input type="number" id="seconds-input" min="0" />
+
+        <button type="submit">Start Countdown</button>
+      </form>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
